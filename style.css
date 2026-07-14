@@ -13,7 +13,7 @@
     font-family: sans-serif;
   }
   #word {
-    font-family: Megrim, cursive;
+    font-family: Orbitron, serif;
     font-size: 5vh;
     position: absolute;
     top: 3vh;
@@ -40,7 +40,7 @@
     position: absolute;
     top: 3vh;
     left: 4vw;
-    font-family: Megrim, cursive;
+    font-family: Orbitron, serif;
     font-size: 2vh;
     color: #cdeeff;
     background: rgba(0, 20, 40, 0.6);
@@ -65,7 +65,7 @@
     z-index: 5;
   }
   .planet-btn {
-    font-family: Megrim, cursive;
+    font-family: Orbitron, serif;
     font-size: 1.5vh;
     letter-spacing: 0.05em;
     color: #cdeeff;
@@ -84,7 +84,7 @@
   }
   .planet-label {
     position: absolute;
-    font-family: Megrim, cursive;
+    font-family: Orbitron, serif;
     font-size: 1.4vh;
     color: #cdeeff;
     text-shadow: 0 0 6px #001820, 0 0 2px #000;
