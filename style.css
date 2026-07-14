@@ -1,0 +1,96 @@
+ @import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    overflow: hidden;
+    margin: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 18% 22%, rgba(140, 70, 190, 0.30), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 82% 18%, rgba(40, 90, 190, 0.28), transparent 60%),
+      radial-gradient(ellipse 50% 60% at 75% 80%, rgba(190, 60, 140, 0.18), transparent 60%),
+      radial-gradient(ellipse 65% 50% at 30% 85%, rgba(50, 130, 170, 0.20), transparent 60%),
+      radial-gradient(circle at 50% 50%, #050014 0%, #02020c 55%, #000004 100%);
+    font-family: sans-serif;
+  }
+  #word {
+    font-family: Megrim, cursive;
+    font-size: 5vh;
+    position: absolute;
+    top: 3vh;
+    left: 4vw;
+    margin: 0;
+    color: #9fe8ff;
+    -webkit-text-stroke: 0.1vh #008080;
+    pointer-events: none;
+    user-select: none;
+    transition: color 0.6s ease;
+    z-index: 5;
+  }
+  #hint {
+    position: absolute;
+    top: 3vh;
+    right: 4vw;
+    color: #6fb8cc;
+    font-size: 1.4vh;
+    opacity: 0.7;
+    text-align: right;
+    z-index: 5;
+  }
+  #back-btn {
+    position: absolute;
+    top: 3vh;
+    left: 4vw;
+    font-family: Megrim, cursive;
+    font-size: 2vh;
+    color: #cdeeff;
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid #6fe0ff;
+    border-radius: 999px;
+    padding: 1vh 2.4vh;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+  }
+  #back-btn:hover { background: rgba(0, 60, 80, 0.85); }
+  #ui {
+    position: absolute;
+    bottom: 3vh;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 3vw;
+    z-index: 5;
+  }
+  .planet-btn {
+    font-family: Megrim, cursive;
+    font-size: 1.5vh;
+    letter-spacing: 0.05em;
+    color: #cdeeff;
+    background: rgba(0, 20, 40, 0.5);
+    border: 1px solid #2a7f8f;
+    border-radius: 999px;
+    padding: 0.7vh 1.8vh;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    transition: all 0.20s ease;
+  }
+  .planet-btn:hover { background: rgba(0, 60, 80, 0.75); border-color: #6fe0ff; }
+  .planet-btn.active {
+    background: #0a4a5a; border-color: #9fe8ff; color: #fff;
+    box-shadow: 0 0 12px #2fd0ff88;
+  }
+  .planet-label {
+    position: absolute;
+    font-family: Megrim, cursive;
+    font-size: 1.4vh;
+    color: #cdeeff;
+    text-shadow: 0 0 6px #001820, 0 0 2px #000;
+    pointer-events: none;
+    transform: translate(-50%, -140%);
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    z-index: 4;
+  }
