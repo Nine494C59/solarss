@@ -39,7 +39,7 @@
   #back-btn {
     position: absolute;
     top: 3vh;
-    left: 4vw;
+    right: 4vw;
     font-family: Orbitron, serif;
     font-size: 2vh;
     color: #cdeeff;
@@ -55,7 +55,7 @@
   #ui {
     position: absolute;
     bottom: 3vh;
-    left: 0;
+    right: 0;
     width: 100%;
     display: flex;
     justify-content: center;
