@@ -58,8 +58,9 @@ const PLANETS = {
     shellMin: 4.4, shellMax: 4.8, shellCount: 38000, ring: null,
     tilt: 0.30, camZ: 13, orbitRadius: 92, orbitSpeed: 0.07, eccentricity: 0.10
   }
-//cho nay dien thong tin may hanh tinh
-  const PLANET_DETAIL = {
+}
+// cho nay dien thong tin may hanh tinh
+const PLANET_DETAIL = {
   MERCURY: "Sao Thủy",
   VENUS: "Sao Kim",
   EARTH: "Trái Đất",
@@ -69,7 +70,6 @@ const PLANETS = {
   URANUS: "Sao Thiên vương",
   NEPTUNE: "Sao Hải vương",
   PLUTO: "Sao Diêm vương - đã bị cho ra khỏi hệ mặt trời và là một hành tinh lùn, quỹ đạo không ổn định"
-};
 };
 const MAP_SCALE = 0.15;       
 const MAP_BODY_SCALE = 0.005;
