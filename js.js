@@ -58,7 +58,7 @@ const PLANETS = {
     shellMin: 4.4, shellMax: 4.8, shellCount: 38000, ring: null,
     tilt: 0.30, camZ: 13, orbitRadius: 92, orbitSpeed: 0.07, eccentricity: 0.10
   }
-}
+};
 // cho nay dien thong tin may hanh tinh
 const PLANET_DETAIL = {
   MERCURY: "Sao Thủy",
