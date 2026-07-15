@@ -63,15 +63,14 @@
     gap: 8px;
     padding: 0 3vw;
     z-index: 5;
-  }
-//BOSUNG 
+   }
   #planet-detail {
     position: absolute;
-    bottom: 3vh;
+    top: 15vh;
     right: 4vw;
     max-width: 32vw;
-    color:#cdeeff;
-    font: Orbitron, times new roman;
+    color: #cdeeff;
+    font-family: Orbitron, "Times New Roman", serif;
     font-size: 1.6vh;
     line-height: 1.6;
     background: rgba(0, 20, 40, 0.55);
@@ -83,8 +82,9 @@
     transition: opacity 0.6s ease;
     z-index: 8;
   }
-  #plane-detail.show {
-   opacity: 1; 
+  #planet-detail.show {
+    opacity: 1;
+  }
   }
   .planet-btn {
     font-family: Orbitron, serif;
