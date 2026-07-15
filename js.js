@@ -58,6 +58,18 @@ const PLANETS = {
     shellMin: 4.4, shellMax: 4.8, shellCount: 38000, ring: null,
     tilt: 0.30, camZ: 13, orbitRadius: 92, orbitSpeed: 0.07, eccentricity: 0.10
   }
+//cho nay dien thong tin may hanh tinh
+  const PLANET_DETAIL = {
+  MERCURY: "Sao Thủy",
+  VENUS: "Sao Kim",
+  EARTH: "Trái Đất",
+  MARS: "Sao Hỏa",
+  JUPITER: "Sao Mộc",
+  SATURN: "Sao Thổ",
+  URANUS: "Sao Thiên vương",
+  NEPTUNE: "Sao Hải vương",
+  PLUTO: "Sao Diêm vương - đã bị cho ra khỏi hệ mặt trời và là một hành tinh lùn, quỹ đạo không ổn định"
+};
 };
 const MAP_SCALE = 0.15;       
 const MAP_BODY_SCALE = 0.005;
@@ -267,7 +279,8 @@ Object.entries(PLANETS).forEach(([name, cfg]) => {
 
   entries[name] = { mesh, hitbox, label, cfg, orbitLine, angle };
 });
-
+//khai bao chuyen may hanh tinh
+let planetDetailEl = document.getElementById("planet-detail");
 //nut an 
 let ui = document.getElementById("ui");
 Object.keys(PLANETS).forEach(name => {
@@ -277,9 +290,7 @@ Object.keys(PLANETS).forEach(name => {
   btn.dataset.planet = name;
   btn.onclick = () => zoomToPlanet(name);
   ui.appendChild(btn);
-});
-
-//phong to 
+}); 
 let detailObject = null;
 let detailPlanetName = null;
 function mapMaterials() {
@@ -340,6 +351,8 @@ function zoomToPlanet(name) {
   if (dir.lengthSq() < 0.0001) dir.set(0, 0, 1);
   let camTarget = worldPos.clone().add(dir.multiplyScalar(cfg.camZ)).add(new THREE.Vector3(0, cfg.camZ * 0.15, 0));
   let outgoingDetail = detailObject;
+  
+  
 // hieu ung hoat anh 
   detailObject = buildPoints(cfg, { scale: 1, countScale: 1, pointSize: 0.125 });
   detailObject.position.copy(worldPos);
@@ -350,6 +363,8 @@ function zoomToPlanet(name) {
   labelsContainer.style.display = "none";
   document.getElementById("back-btn").style.display = "block";
   document.getElementById("word").textContent = name;
+  planetDetailEl.textContent = PLANET_DETAIL[name] || "";
+  planetDetailEl.classList.add("show");
   let hex = "#" + cfg.colorA.map(v => Math.round(v).toString(16).padStart(2, "0")).join("");
   document.getElementById("word").style.color = hex;
   document.querySelectorAll(".planet-btn").forEach(b => b.classList.toggle("active", b.dataset.planet === name));
@@ -374,7 +389,7 @@ function backToMap() {
   const outgoingMats = detailObject ? [detailObject.material] : [];
   mapGroup.visible = true;
   setGroupOpacity(mapMaterials(), 0); // start transparent, will fade in below
-
+  planetDetailEl.classList.remove("show");
   startTransition(OVERVIEW_CAM_POS, OVERVIEW_TARGET, 1400, {
     fadeOut: outgoingMats,
     fadeIn: mapMaterials(),
