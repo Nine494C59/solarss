@@ -61,15 +61,15 @@ const PLANETS = {
 };
 // cho nay dien thong tin may hanh tinh
 const PLANET_DETAIL = {
-  MERCURY: "Sao Thủy",
-  VENUS: "Sao Kim",
-  EARTH: "Trái Đất",
-  MARS: "Sao Hỏa",
-  JUPITER: "Sao Mộc",
-  SATURN: "Sao Thổ",
-  URANUS: "Sao Thiên vương",
-  NEPTUNE: "Sao Hải vương",
-  PLUTO: "Sao Diêm vương - đã bị cho ra khỏi hệ mặt trời và là một hành tinh lùn, quỹ đạo không ổn định"
+  MERCURY: "Sao Thủy - nhỏ nhất, gần nhất, biến thiên cực đoan nhưng lại là Thủy, trong chiêm tinh học cai quản chòm Xử Nữ và Song Tử, tượng trưng cho phân tích logic, chi tiết và khả năng giao tiếp",
+  VENUS: "Sao Kim - chị em với Trái Đất, sáng nhất trước 8 giờ tối, bề mặt khắc nghiệt nhất hệ, hoạt động mạnh cùng thời điểm với hoạt động chòm Kim Ngưu",
+  EARTH: "Trái Đất - không có gì để nói, quay từ Tây Sang Đông, mặt trời mọc Đông lặn Tây, có xu hướng đang xoay lệch trục với sai số rất nhỏ (tuế sai) như con lắc - cùng sao Mộc và Kim, là cơ sở khoa học cho cách tính năm tam tai, thái tuế ở phương Đông",
+  MARS: "Sao Hỏa - Hành tinh đỏ, khá tương đồng Trái Đất khi ngày dài 24,5 giờ, biết đâu nếu đi về hướng Đông Bắc từ dãy núi cao nhất có thể là sẽ khám phá ra dấu hiệu sự sống đấy chứ giờ thì chưa =))",
+  JUPITER: "Sao Mộc - thường dược nhiều nền văn minh xem như biểu tượng của may mắn, có hơn 95 mặt trăng, 4 mặt trăng lớn khám phá ra từ thời Galileo, khối lượng lớn, chủ yếu khí với lỏng, thể tích bất thường",
+  SATURN: "Sao Thổ - quỹ đạo ổn định nhất, có vành đai đất đá lớn, khó tiếp cận nhất, nhiều nguyên tố lạ, hệ mặt trăng phong phú, hành tinh này chắc chắn sẽ là bí mật về sự hiện diện của thời gian",
+  URANUS: "Sao Thiên vương -  quay nghiêng gần 98 độ như đang 'lăn' trên quỹ đạo, hành tinh lạnh giá nhất hệ với bầu khí quyển toàn H2S, quỹ đạo vòng ngoài",
+  NEPTUNE: "Sao Hải vương - cô độc ở rìa hệ, nơi đón những cơn cuồng phong khủng khiếp nhất với vận tốc vượt âm thanh (hơn 2.100 km/h) và những cơn mưa kim cương trong lòng hành tinh, cai quản chòm Song Ngư, trong nhiều nền văn hóa, đây là hành tinh của những linh hồn và tư tưởng",
+  PLUTO: "Sao Diêm vương - đã bị cho ra khỏi hệ mặt trời và là một hành tinh lùn, băng nitơ khổng lồ trên bề mặt, quỹ đạo hình elip dẹt ngang đường đi của sao Hải Vương, cai quản chòm Bọ Cạp"
 };
 const MAP_SCALE = 0.15;       
 const MAP_BODY_SCALE = 0.005;
